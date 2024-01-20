@@ -11,7 +11,6 @@ import { MenuComponent } from './components/menu/menu.component';
 import { HamburguesasComponent } from './components/hamburguesas/hamburguesas.component';
 import { BurritoComponent } from './components/burrito/burrito.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CardsComponent } from './cards/cards.component';
 
 
 @NgModule({
