@@ -16,7 +16,7 @@ interface MenuItem {
 export class MenuComponent {
 
   muestraTitulo = true
-  titulo = "Componente card"
+  titulo = ""
   propertyBinding = "blue";
 
   sendValue (info:any){
