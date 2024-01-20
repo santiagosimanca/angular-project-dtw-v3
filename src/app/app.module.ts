@@ -23,6 +23,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HamburguesasComponent,
     BurritoComponent,
     PageNotFoundComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
