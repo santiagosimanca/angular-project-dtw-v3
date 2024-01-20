@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 interface MenuItem {
   name: string;
   imageUrl: string;
@@ -18,7 +19,13 @@ export class MenuComponent {
   muestraTitulo = true
   titulo = ""
   propertyBinding = "blue";
+  userExperience: string = '';
 
+  submitExperience() {
+    // You can perform any logic here with the user's experience
+    console.log('User Experience Submitted:', this.userExperience);
+  }
+  
   sendValue (info:any){
     console.log(info);
   }

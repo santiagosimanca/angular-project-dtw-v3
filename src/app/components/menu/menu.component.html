@@ -188,6 +188,10 @@
         <h1 class="fst-italic">Cuéntanos tu experiencia</h1>
         <p class="lead my-3" style="color: black">Personaliza tus hamburguesas, descubre una experiencia de sabor única y regresa por más</p>
         <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continuar leyendo...</a></p>
+        <form>
+          <textarea id="userExperience" name="userExperience" rows="2" cols="50" [(ngModel)]="userExperience" placeholder="Write your experience here..."></textarea>
+          <button type="button" (click)="submitExperience()">Enviar</button>
+        </form>
       </div>
       <div class="col-md-6">
         <div id="contenedor" class="row featurette">
