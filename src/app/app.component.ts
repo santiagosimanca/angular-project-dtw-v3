@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
 
+
+interface MenuItem {
+  name: string;
+  imageUrl: string;
+  ingredients: string[];
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
