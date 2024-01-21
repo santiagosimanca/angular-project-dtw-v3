@@ -16,6 +16,15 @@ interface MenuItem {
 
 export class MenuComponent {
 
+  cantidadProducto = 14;
+  public disminuirProducto() {
+    this.cantidadProducto=this.cantidadProducto-1;
+  }
+  public aumentarProducto() {
+    this.cantidadProducto=this.cantidadProducto+1
+  }
+
+
   muestraTitulo = true
   titulo = "Componente card"
   propertyBinding = "blue";

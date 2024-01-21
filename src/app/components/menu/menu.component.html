@@ -247,15 +247,15 @@
    <!-- Empieza la card de Santiago parte II -->
   <div class="p-5" style="background-color: #DBDBDB">
     <p class="text-center m-0 text-muted">Resumen de tu pedido</p>
-    <div class="row mx-auto" style="max-width: 980px;">
+    <div class="row mx-auto">
         <aside class="col-lg-6">
             <!-- modal 1 -->
             <div class="modal" tabindex="-1" style="display: block; position: static;">
-                <div class="modal-dialog">
+                <div class="modal-dialog menu-map">
                     <div class="modal-content shadow">
                         <div class="modal-header">
                             <h5 class="modal-title">Tu dirección</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" fdprocessedid=""></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" fdprocessedid=""> <span class="close-x">x</span> </button>
                         </div>
                         <div class="modal-body">
                             <form>
@@ -272,8 +272,8 @@
                                     </div>
                                 </div>
                             </form>
-                            <article class="rounded" style="background:#ccc; height:200px; overflow: hidden;">
-                                <img src="assets/images/map.jpg" class="img-fluid">
+                            <article class="rounded" style="background:#ccc; height: 500px; overflow: hidden;">
+                                <img src="assets/images/map.jpg" class="img-fluid img-map">
                             </article>
                         </div>
                     
@@ -286,7 +286,7 @@
         <aside class="col-lg-6">
             
             <div class="modal" tabindex="-1" style="display: block; position: static;">
-                <div class="modal-dialog">
+                <div class="modal-dialog shopping-card">
                     <div class="modal-content shadow">
                         <div class="modal-body">
                             <div class="itemside mb-3">
@@ -302,17 +302,17 @@
                             <hr>
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <b class="text-dark">Precio: $29.900</b>
+                                    <b class="text-dark">Precio: {{29900*cantidadProducto}} </b>
                                 </div>
                                 <div class="col-auto">
                                     <div class="input-group" style="max-width:200px">
-                                        <button class="btn btn-icon btn-light" type="button" fdprocessedid="">
+                                        <button class="btn btn-icon btn-light" type="button" fdprocessedid="" (click)="cantidadProducto=cantidadProducto-1" >
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#999" viewBox="0 0 24 24">
                                                 <path d="M19 13H5v-2h14v2z"></path>
                                             </svg>
                                         </button>
-                                        <input class="form-control text-center" readonly="" placeholder="" value="14" fdprocessedid="">
-                                        <button class="btn btn-icon btn-light" type="button" fdprocessedid="">
+                                        <input class="form-control text-center" readonly="" placeholder="" [(ngModel)]="cantidadProducto" fdprocessedid="">
+                                        <button class="btn btn-icon btn-light" type="button" fdprocessedid="" (click)="cantidadProducto=cantidadProducto+1">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#999" viewBox="0 0 24 24">
                                                 <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
                                             </svg>
@@ -448,7 +448,7 @@
           <div class="col-auto">
               <label class="sr-only" for="subscribeEmail">Correo Electrónico</label>
               <div class="input-group mb-2">
-                  <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                  <input type="text" class="form-control bg-dark border-light input-color" id="subscribeEmail" placeholder="Email address">
                   <div class="input-group-text btn-success text-light">Suscríbete para recibir promociones</div>
               </div>
           </div>
