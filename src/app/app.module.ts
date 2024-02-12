@@ -12,6 +12,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { HamburguesasComponent } from './components/hamburguesas/hamburguesas.component';
 import { BurritoComponent } from './components/burrito/burrito.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MenuhambComponent } from './components/menuhamb/menuhamb.component';
 
 
 
@@ -23,6 +24,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HamburguesasComponent,
     BurritoComponent,
     PageNotFoundComponent,
+    MenuhambComponent,
   ],
   imports: [
     BrowserModule,
